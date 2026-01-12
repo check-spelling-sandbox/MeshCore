@@ -191,6 +191,19 @@ jobs:
             census:census-10.txt
           extra_dictionaries: |
             cspell1:software-terms/softwareTerms.txt
+          load-config-from: |
+            {
+              "pr-base-keys": [
+                "check_extra_dictionaries",
+                "dictionary_source_prefixes",
+                "extra_dictionaries",
+                ""
+              ],
+              "pr-trusted-keys": [
+                ""
+              ],
+              "": []
+            }
 
   comment-push:
     name: Report (Push)
